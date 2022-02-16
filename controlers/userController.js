@@ -31,7 +31,7 @@ class UserController {
 
     async login(req, res , next) {
         const {email , password} = req.body
-        const user = await User.findOne({where : {email}})
+        const user = await User.findOne({where : {er}})
         if (!user){
             return next(ApiError.internal("извените таеой email нету жок"))
         }
